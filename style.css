@@ -63,6 +63,7 @@ input[type="search"] {
     height: 44px;
     border: none;
     padding: 15px;
+    outline: none;
 }
 button {
     color: blue;
