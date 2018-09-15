@@ -242,7 +242,6 @@ main > ul {
 .link {
     color: #006621;
     font-size: 14px;
-    text-decoration: none;
     display: inline-block;
 }
 .link:hover {
@@ -251,6 +250,7 @@ main > ul {
 #results p {
     color: #545454;
     line-height: 1.4;
+    font-size: 13px;
 }
 #results > li:first-child footer {
     padding: 5px 10px;
