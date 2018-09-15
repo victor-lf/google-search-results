@@ -7,6 +7,11 @@ html, body {
     color: #222;
 }
 
+/* Override 'Font Boosting' in Chrome mobile */
+html * {
+    max-height: 10000000px;
+}
+
 a {
     text-decoration: none;
     color: #1a0dab;
@@ -33,7 +38,6 @@ ul > li {
     list-style-type: none;
     display: inline-block;
     vertical-align: middle;
-    max-height: 300px;
 }
 
 img {
