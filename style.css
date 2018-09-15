@@ -2,7 +2,7 @@ html, body {
     height: 100%;
     margin: 0; 
     font-family: Arial, sans-serif;
-    font-size: ;
+    font-size: 13px;
     background: #fff;
     color: #222;
 }
@@ -142,6 +142,7 @@ nav {
     align-items: center;
     margin-left: 150px;
     width: 632px;
+    font-size: 13px;
 }
 nav a:nth-child(7) {
     margin-left: auto;
