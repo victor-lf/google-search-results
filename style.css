@@ -236,7 +236,8 @@ main > ul {
     color: #777;
 }
 .title {
-    font-size: 18px;
+    /*font-size: 18px; */
+    font-size: 1.38rem;
     font-weight: normal;
     margin-top: 10px;
 }
