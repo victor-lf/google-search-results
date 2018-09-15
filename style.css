@@ -208,10 +208,9 @@ a h3 {
     font-weight: normal;
     font-size: 18px;
     margin-top: 10px;
-    display: inline-block;
 }
 .card {
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
     border: none;
     border-radius: 2px;
     padding: 15px 20px;
