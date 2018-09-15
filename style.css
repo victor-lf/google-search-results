@@ -236,8 +236,7 @@ main > ul {
     color: #777;
 }
 .title {
-    /*font-size: 18px; */
-    font-size: 1.38rem;
+    font-size: 18px;
     font-weight: normal;
     margin-top: 10px;
 }
@@ -249,7 +248,8 @@ main > ul {
 #results p {
     color: #545454;
     line-height: 1.4;
-    font-size: 13px;
+    font-size: 1rem;
+    /*font-size: 13px; */
 }
 #results > li:first-child footer {
     padding: 5px 10px;
