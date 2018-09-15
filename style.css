@@ -37,7 +37,6 @@ ul {
 ul > li {
     list-style-type: none;
     display: inline-block;
-    vertical-align: middle;
 }
 
 img {
