@@ -247,12 +247,7 @@ main > ul {
 .link:hover {
     text-decoration: none !important;
 }
-/*#results p {
-    color: #545454;
-    line-height: 1.4;
-    font-size: 13px;
-}*/
-.test {
+#results p {
     color: #545454;
     line-height: 1.4;
     font-size: 13px;
