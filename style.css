@@ -24,12 +24,6 @@ h3 {
     font-size: 16px;
 }
 
-a h3 {
-    font-weight: normal;
-    font-size: 18px;
-    margin-top: 10px;
-}
-
 ul {
     margin: 0;
     padding: 0;
@@ -239,6 +233,11 @@ main > ul {
 .card li:last-child a {
     font-size: 14px;
     color: #777;
+}
+.title {
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: 10px;
 }
 .link {
     color: #006621;
