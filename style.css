@@ -33,7 +33,7 @@ ul > li {
     list-style-type: none;
     display: inline-block;
     vertical-align: middle;
-    height: auto;
+    max-height: 300px;
 }
 
 img {
