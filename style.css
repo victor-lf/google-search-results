@@ -238,7 +238,7 @@ main > ul {
 .title {
     font-size: 18px;
     font-weight: normal;
-    margin-top: 10px;
+    margin: 10px 0 3px;
 }
 .link {
     color: #006621;
@@ -249,6 +249,7 @@ main > ul {
     color: #545454;
     line-height: 1.4;
     font-size: 13px;
+    margin-top: 3px;
 }
 #results > li:first-child footer {
     padding: 5px 10px;
