@@ -247,12 +247,14 @@ main > ul {
 .link:hover {
     text-decoration: none !important;
 }
-#results p {
+/*#results p {
     color: #545454;
     line-height: 1.4;
     font-size: 13px;
-}
+}*/
 .test {
+    color: #545454;
+    line-height: 1.4;
     font-size: 13px;
 }
 #results > li:first-child footer {
