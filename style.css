@@ -166,6 +166,9 @@ nav .selected {
     font-weight: bold;
     border-bottom: 3px solid #1A73E8;
 }
+nav .selected:hover {
+    color: #1A73E8;
+}
 nav a:hover {
     text-decoration: none;
     color: #222;
