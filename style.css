@@ -195,7 +195,7 @@ main {
 }
 #stats {
     color: #777;
-    padding: 12px 0;
+    padding: 12px 20px;
 }
 main > ul {
    margin-bottom: 50px;
