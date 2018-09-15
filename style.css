@@ -248,8 +248,7 @@ main > ul {
 #results p {
     color: #545454;
     line-height: 1.4;
-    font-size: 1rem ;
-    /*font-size: 13px; */
+    font-size: 13px;
 }
 #results > li:first-child footer {
     padding: 5px 10px;
