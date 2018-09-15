@@ -5,14 +5,14 @@
     <title>Google</title>
     <link rel="icon" type="image/png" href="images/icon.png">
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
-
     <header>
-        <div class="flex-container">
+        <div>
             <a href="https://victor-lf.github.io/google-homepage/"><img src="images/google_logo.png" alt="Google" width="120" height="44"/></a>
-            <form action="#" method="GET">
-                <input type="search" name="query" title="Search" autocomplete="off">
+            <form id="search" action="#" method="GET">
+                <input type="search" name="query" title="Search" value="build this webpage" onfocus="myFunction()" onblur="myFunction2()" autocomplete="off"/>
                 <button type="submit">
                     <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                         <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59
@@ -21,12 +21,9 @@
                     </svg>
                 </button>
             </form>
-            <ul>
-                <li><a id="apps" href="#"></a></li>
-                <li><a id="signin" href="#">Sign in</a></li>
-            </ul>
-        </div>
-        <nav class="flex-container">
+            <span><a id="apps" href="#"></a><a id="signin" href="#">Sign in</a></span>
+        </div> 
+        <nav>
             <a href="#" class="selected">All</a>
             <a href="#">Videos</a>
             <a href="#">News</a>
@@ -34,26 +31,27 @@
             <a href="#">Maps</a>
             <a href="#">More</a>
             <a href="#">Settings</a>
-            <a href="#">Tools</a>
+            <a id="tools" href="#">Tools</a>
         </nav>
     </header>
-
     <main>
-        <div>About 122,000,000 results (0.24 seconds)</div>
+        <div id="stats">About 122,000,000 results (0.24 seconds)</div>
         <ul id="results">
             <li>
                 <div class="card">
                     <a href="#"><img src="images/miniature.jpg" alt="Image result for build this webpage" height="91" width="211"/></a>
-                    <h3>1. TO CREATE A WEBSITE WITH WORDPRESS (OR JOOMLA & DRUPAL), USE ONE CLICK INSTALLATION:</h3>
+                    <h3>1. TO CREATE A <strong>WEBSITE</strong> WITH WORDPRESS <br/> (OR JOOMLA & DRUPAL), USE ONE CLICK <br/> INSTALLATION:</h3>
                     <ol>
                         <li>Log in to your hosting account.</li>
                         <li>Go to your control panel.</li>
-                        <li>Go to your control panel.</li>
-                        <li>Choose the domain where you want to install your website.</li>
+                        <li>Look for the “WordPress” or “<strong>Website</strong>” icon.</li>
+                        <li>Choose the domain where you want to install your <strong>website</strong>.</li>
                         <li><a href="#">More items...</a></li>
                     </ol>
-                    <h3><a href="#">How to Create a Website: Step-by-Step Guide for Beginners (2018)</a></h3>
-                    <div class="link">https://websitesetup.org/</div>
+                    <a href="#">
+                        <h3>How to Create a Website: Step-by-Step Guide for Beginners (2018)</h3>
+                        <div class="link">https://websitesetup.org/</div>
+                    </a>
                 </div>
                 <footer>
                     <a>
@@ -73,95 +71,94 @@
                 </footer>
             </li>
             <li>
-                <h3><a href="#">With zero coding experience, artist building 180 webpages in 180 days</a></h3>
-                <div class="link">
-                    https://arstechnica.com/.../with-zero-coding-experience-artist-building-180-webpages-...
-                    <a class="down-arrow" href="#"></a>
-                </div>
-                <p><span class="date">Jul 26, 2013 - </span>The next day, she built another, and she has kept building one new webpage every single day.
+                <a href="#">
+                    <h3>With zero coding experience, artist building 180 webpages in 180 days</h3>
+                    <div class="link">https://arstechnica.com/.../with-zero-coding-experience-artist-building-180-webpages-...</div>
+                </a>
+                <a href="#"><span class="down-arrow"> </span></a>
+                <p><span class="date">Jul 26, 2013 - </span>The next day, she built another, and she has kept <strong>building</strong> one new <strong>webpage</strong> every single day.
                 Instead of beginning with "Hello World," a class, ...</p>
             </li>
             <li>
-                <h3><a href="#">build this webpage</a></h3>
-                <div class="link">
-                    https://benjdelt.github.io/google-results/ <a class="down-arrow" href="#"></a>
-                </div>
+                <a href="#">
+                    <h3>build this webpage</h3>
+                    <div class="link">https://benjdelt.github.io/google-results/</div>
+                </a>
+                <a href="#"><span class="down-arrow"></span></a>
                 <p>With zero coding experience, artist building 180 webpages in 180 days ...
-                build this webpage - Google Search https://aryavansh.github.io/googleresults.</p>
+                <strong>build this webpage</strong> - Google Search https://aryavansh.github.io/googleresults.</p>
             </li>
             <li>
-                <h3><a href="#">Google Homepage</a></h3>
-                <div class="link">
-                    swatikumar16.github.io/google-homepage/ <a class="down-arrow" href="#"></a>
-                </div>
-                <p>With zero coding experience, artist building 180 webpages ... arstechnica.com/.../with-zero-coding-experience-artist-build...
+                <a href="#">
+                    <h3>Google Homepage</h3>
+                    <div class="link">swatikumar16.github.io/google-homepage/</div>
+                </a>
+                <a href="#"><span class="down-arrow"></span></a>
+                <p>With zero coding experience, artist <strong>building</strong> 180 <strong>webpages</strong> ... arstechnica.com/.../with-zero-coding-experience-artist-<strong>build</strong>...
                 Ars Technica. Jul 26, 2013 - 117 ...</p>
             </li>
             <li>
-                <h3><a href="#">build this webpage - Jonathan Yiv</a></h3>
-                <div class="link">
-                    https://jonathanyiv.github.io/google-searchpage/ <a class="down-arrow" href="#"></a>
-                </div>
-                <p>How to build a website? 1. TO CREATE A WEBSITE WITH WORDPRESS (OR JOOMLA & DRUPAL),
+                <a href="#">
+                    <h3>build this webpage - Jonathan Yiv</h3>
+                    <div class="link">https://jonathanyiv.github.io/google-searchpage/</div>
+                </a>
+                <a href="#"><span class="down-arrow"></span></a>
+                <p>How to <strong>build</strong> a <strong>website</strong>? 1. TO CREATE A <strong>WEBSITE</strong> WITH WORDPRESS (OR JOOMLA & DRUPAL),
                 USE ONE CLICK INSTALLATION. 1. Log   in to your hosting ...</p>
             </li>
             <li>
-                <h3><a href="#">Jennifer Dewalt — I'm learning to code by building 180 websites in...</a></h3>
-                <div class="link">
-                    blog.jenniferdewalt.com/post/.../im-learning-to-code-by-building-180-websites-in
-                    <a class="down-arrow" href="#"></a>
-                </div>
-                <p><span class="date">Jul 24, 2013 - </span>Build a different website every day for 180 consecutive days.
-                Every website must be accompanied by a blog post. Any code I write must be ...</p>
+                <a href="#">
+                    <h3>Jennifer Dewalt — I'm learning to code by building 180 websites in...</h3>
+                    <div class="link">blog.jenniferdewalt.com/post/.../im-learning-to-code-by-building-180-websites-in</div>
+                </a>
+                <a href="#"><span class="down-arrow"></span></a>
+                <p><span class="date">Jul 24, 2013 - </span><strong>Build</strong> a different <strong>website</strong> every day for 180 consecutive days.
+                Every <strong>website</strong> must be accompanied by a blog post. Any code I write must be ...</p>
             </li>
             <li>
-                <h3><a href="#">How to Create a Website: Step-by-Step Guide for Beginners (2018)</a></h3>
-                <div class="link">
-                    https://websitesetup.org/ <a class="down-arrow" href="#"></a>
-                </div>
-                <p>1. TO CREATE A WEBSITE WITH WORDPRESS (OR JOOMLA & DRUPAL), USE ONE CLICK INSTALLATION: Log in to your hosting account.
-                Go to your control panel. Look for the “WordPress” or “Website” icon. Choose the domain where you want to install your website.</p>
+                <a href="#">
+                    <h3>How to Create a Website: Step-by-Step Guide for Beginners (2018)</h3>
+                    <div class="link">https://websitesetup.org/</div>
+                </a>
+                <a href="#"><span class="down-arrow"></span></a>
+                <p>1. TO CREATE A <strong>WEBSITE</strong> WITH WORDPRESS (OR JOOMLA & DRUPAL), USE ONE CLICK INSTALLATION: Log in to your hosting account.
+                Go to your control panel. Look for the “WordPress” or “<strong>Website</strong>” icon. Choose the domain where you want to install your <strong>website</strong>.</p>
             </li>
             <li>
-                <h3><a href="#">Building Your First Web Page - Learn to Code HTML & CSS</a></h3>
-                <div class="link">
-                    https://learn.shayhowe.com/html-css/building-your-first-web-page/
-                    <a class="down-arrow" href="#"></a>
-                </div>
-                <p>And chances are someone somewhere has built a website with your exact search in mind.
+                <a href="#">
+                    <h3>Building Your First Web Page - Learn to Code HTML & CSS</h3>
+                    <div class="link">https://learn.shayhowe.com/html-css/building-your-first-web-page/</div>
+                </a>
+                <a href="#"><span class="down-arrow"></span></a>
+                <p>And chances are someone somewhere has built a <strong>website</strong> with your exact search in mind.
                 Within this book I'm going to show you how to build your own ...</p>
             </li>
             <li>
-                <h3><a href="#">Create Your Website for Free — Website.com</a></h3>
-                <div class="link">
-                    https://www.website.com/ <a class="down-arrow" href="#"></a>
-                </div>
-                <p>Website.com makes it easy for you to create a website and grow your business
+                <a href="#">
+                    <h3>Create Your Website for Free — Website.com</h3>
+                    <div class="link">https://www.website.com/</div>
+                </a>
+                <a href="#"><span class="down-arrow"></span></a>
+                <p><strong>Website</strong>.com makes it easy for you to create a <strong>website</strong> and grow your business
                 online with ecommerce and SEO solutions all in one place.</p>
             </li>
             <li>
-                <h3><a href="#">Make a Website: Free Tutorial | Codecademy</a></h3>
-                <div class="link">
-                    https://www.codecademy.com/learn/make-a-website <a class="down-arrow" href="#"></a>
-                </div>
-                <p>Continue your learning by starting with Make a Website ... Learn to Build Websites from Scratch by
-                creating 16 beautifully designed projects in this accelerated ...</p>
+                <a href="#">
+                    <h3>Make a Website: Free Tutorial | Codecademy</h3>
+                    <div class="link">https://www.codecademy.com/learn/make-a-website</div>
+                </a>
+                <a href="#"><span class="down-arrow"></span></a>
+                <p>Continue your learning by starting with Make a <strong>Website</strong> ... Learn to <strong>Build</strong> Websites from Scratch by
+                <strong>creating</strong> 16 beautifully designed projects in this accelerated ...</p>
             </li>
             <li>
-                <h3><a href="#">Webnode: Create a free website easily | Free website builder</a></h3>
-                <div class="link">
-                    https://www.webnode.com/ <a class="down-arrow" href="#"></a>
-                </div>
-                <p>Create your own website for free! You can create an amazing website with Webnode in just minutes.
-                Join our 30 million users and build one yourself. Get Started.</p>
-            </li>
-            <li>
-                <h3><a href="https://www.youtube.com/watch?v=IJhD75IEwvA">EIS QUE VC COMPRA UM GATO NA DEEP WEB - YouTube</a></h3>
-                <div class="link">
-                    https://www.youtube.com/watch?v=IJhD75IEwvA <a class="down-arrow" href="#"></a>
-                </div>
-                <a href="https://www.youtube.com/watch?v=IJhD75IEwvA"><img src="images/gatu.jpg" width="150" height="90" style="margin:3px 3px 0 0;float:left;"></a>
-                ooooooooooooooooooooooooo
+                <a href="#">
+                    <h3>Webnode: Create a free website easily | Free website builder</h3>
+                    <div class="link">https://www.webnode.com/</div>
+                </a>
+                <a href="#"><span class="down-arrow"></span></a>
+                <p>Create your own <strong>website</strong> for free! You can create an amazing <strong>website</strong> with Webnode in just minutes.
+                Join our 30 million users and <strong>build</strong> one yourself. Get Started.</p>
             </li>
         </ul>
         <div id="related">
@@ -174,10 +171,9 @@
                 <li><a href="#"><strong>website development basics</strong></a></li>
                 <li><a href="#"><strong>website in a day</strong></a></li>
                 <li><a href="#"><strong>introduction of website project</strong></a></li>
-                <li><a href="#"><strong>days webpage</strong></a></li>
+                <li><a href="#"><strong>180 days</strong> webpage</a></li>
             </ul>
         </div>
-        
         <table>
             <tr>
                 <td><img src="images/G.png" alt="G"/><br/></td>
@@ -194,11 +190,7 @@
                 <td><a href="#"><img src="images/gle.png" alt="gle"/>Next</a></td>
             </tr>
         </table>
-        
-       
-
     </main>
-
     <footer>
         <div>Brazil</div>
         <ul>
@@ -208,6 +200,5 @@
             <li><a>Terms</a></li>
         </ul>
     </footer>
-
 </body>
 </html>
