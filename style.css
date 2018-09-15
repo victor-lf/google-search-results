@@ -252,6 +252,9 @@ main > ul {
     line-height: 1.4;
     font-size: 13px;
 }
+.test {
+    font-size: 13px;
+}
 #results > li:first-child footer {
     padding: 5px 10px;
     fill: #9e9e9e;
