@@ -274,6 +274,9 @@ main > ul {
 #results > li:nth-child(n+2) {
     padding-left: 20px;
 }
+#results > li:nth-child(n+2) a:nth-child(2) {
+    margin-left: 5px;
+}
 .date {
     color: #808080;
 }
