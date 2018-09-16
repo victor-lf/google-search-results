@@ -317,6 +317,10 @@ table img {
 table a {
     color: #4285f4;
 }
+td:last-child {
+    text-align: end;
+    width: 78px;
+}
 
 body > footer {
     margin-top: 30px;
