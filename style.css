@@ -227,6 +227,7 @@ main > ul {
     list-style-type: none;
     margin-bottom: 25px;
       /* Override 'Font Boosting' in Chrome mobile */
+    height: auto;
 }
 
 #results p {
