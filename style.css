@@ -6,9 +6,6 @@ html, body {
     color: #222;
 }
 
-/* Override 'Font Boosting' in Chrome mobile */
-/*html * {max-height: 10000000px;}*/
-
 a {
     text-decoration: none;
     color: #1a0dab;
@@ -229,7 +226,7 @@ main > ul {
 #results > li {
     list-style-type: none;
     margin-bottom: 25px;
-    max-height: 100%;
+    max-height: ;  /* Override 'Font Boosting' in Chrome mobile */
 }
 
 #results p {
