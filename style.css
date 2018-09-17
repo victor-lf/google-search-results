@@ -228,6 +228,7 @@ main > ul {
     margin-bottom: 25px;
       /* Override 'Font Boosting' in Chrome mobile */
     height: auto;
+    width: auto;
 }
 
 #results p {
