@@ -39,7 +39,7 @@ focus an element, how do you select its parent to apply a property to it
 (`box-shadow`, in this case)? Well, with pure CSS, apparently the only way is
 using the `:has()` pseudo-class. But, as of 2018, this is experimental and [not
 supported by any browser](https://caniuse.com/#feat=css-has). This limitation is
-well know, as can be seen [here](https://stackoverflow.com/questions/2212583/affecting-parent-element-of-focusd-element-pure-csshtml-preferred#2212935), [here](https://stackoverflow.com/questions/1014861/is-there-a-css-parent-selector?noredirect=1&lq=1) and [here](https://en.wikipedia.org/wiki/Cascading_Style_Sheets#Limitations).
+well know, as can be seen [here](https://stackoverflow.com/questions/2212583/affecting-parent-element-of-focusd-element-pure-csshtml-preferred#2212935), [here](https://stackoverflow.com/questions/1014861/is-there-a-css-parent-selector?noredirect=1&lq=1) and [here](https://en.wikipedia.org/wiki/Cascading_Style_Sheets#Limitations).  
 I resorted to JavaScript to solve this problem.  When you focus the input field,
 a function is called via the `onfocus` attribute. This function gets the `form`
 element and sets the CSS `box-shadow` property to it. But now you have to apply
