@@ -6,7 +6,7 @@ html, body {
     color: #222;
 }
 
-#results * {max-height: 1000000px;}  /* Override 'Font Boosting' in Chrome mobile */
+/*#results * {max-height: 1000000px;}  /* Override 'Font Boosting' in Chrome mobile */ 
 
 a {
     text-decoration: none;
