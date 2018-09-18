@@ -24,7 +24,7 @@ layout.
 In the `main`, I put the results as list items of an unordered list, as I did
 with the "related searchs".  
 For that "Goooooooooogle" at the bottom, I found it
-easier and practical to just create a `table` with one row. Each letter is an
+easier and practical to just use a `table` with one row. Each letter is an
 image inside a cell of the table, except the "gle >", which is just one image
 inside a cell.
 
