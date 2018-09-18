@@ -271,6 +271,7 @@ main > ul {margin-bottom: 50px;}
 }
 
 #results > li:first-child footer svg {
+    color: #777;
     height: 16px;
     line-height: 16px;
     vertical-align: bottom;
