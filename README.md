@@ -6,9 +6,9 @@ the original source code to fine tune the styling so that the page looks exactly
 like the original.  
 I separated the page in three sections:
 
-1. The `header`, which contains a form for the search field and navigation links
+1. The `header`, which contains the search field and navigation links
 2. The `main`, which contains the results
-3. The `footer`, which contains an unordered list for the links at the bottom
+3. The `footer`, which contains some links
 
 In the `header`, I put the Google image, the form, the "apps" icon and the
 "Sign in" button inside a **flex container**, as well as the navigation links
