@@ -4,7 +4,6 @@ html, body {
     font-size: 13px;
     background: #fff;
     color: #222;
-    max-height: 100%;  /* Override 'Font Boosting' in Chrome mobile */
 }
 
 a {
@@ -227,6 +226,7 @@ main > ul {
 #results > li {
     list-style-type: none;
     margin-bottom: 25px;
+    max-height: 1000000px;  /* Override 'Font Boosting' in Chrome mobile */
 }
 
 #results p {
