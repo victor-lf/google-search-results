@@ -43,7 +43,7 @@ well know, as can be seen [here](https://stackoverflow.com/questions/2212583/aff
 I resorted to JavaScript to solve this problem.  When you focus the search field (`input` element), a function is called via the `onfocus` attribute. This function gets the `form`
 element and changes its CSS `box-shadow` property. To set the `box-shadow` property back to normal when the search field loses focus, you call another function via the `onblur` attribute. But now you have a problem. The `box-shadow` property
 applied by the script is inline style and overrides the `box-shadow` property
-applied when the `form` is hovered. Now, the shadow doesn't change if the `form` is hovered. To bypass this, I used an `!important` declaration to prioritize the `box-shadow` property in the `form:hover` selector.
+applied when the `form` is hovered. Now, the shadow doesn't change if the `form` is hovered. To bypass this, I used an `!important` declaration to prioritize the `box-shadow` property in the `form:hover` selector.  
 Although it works, this is all very hackish and inelegant. Please, if you know a better solution, open a pull request.
 
 Another sidenote. Testing the page in Chrome for Android, I noted tha the fonts
