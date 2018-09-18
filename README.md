@@ -48,11 +48,12 @@ Although it works, this is all very hackish and inelegant. Please, if you know a
 
 Another sidenote. Testing the page in Chrome for Android, I noted tha the fonts
 were not correct. The headings and paragraphs inside `#results` were too big. I
-found that this was caused by a "feature" in Chrome for Android called
-*FontBoosting*. It's described
+found that this was caused by a "feature" in some mobile browsers called
+**Font Boosting**. It's described
 [here](https://bugs.webkit.org/show_bug.cgi?id=84186). According to [this
 answer](https://bugs.webkit.org/show_bug.cgi?id=84186#c17), the only side-effect
-free way to disable Chrome for Android's FontBoosting is to set CSS
+free way to disable Font Boosting is to set CSS
 `max-height: 1000000px` on the block that contains the text, or any fixed height
-greater than the actual height. Setting the `max-height` for all elements
+greater than the actual height.  
+Setting the `max-height` for all elements
 inside `#results` (`#results * {max-height: 1000000px;}`) solved the problem.
