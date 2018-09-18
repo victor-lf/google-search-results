@@ -41,7 +41,7 @@ using the `:has()` pseudo-class. But, as of 2018, this is experimental and [not
 supported by any browser](https://caniuse.com/#feat=css-has). This limitation is
 well know, as can be seen [here](https://stackoverflow.com/questions/2212583/affecting-parent-element-of-focusd-element-pure-csshtml-preferred#2212935), [here](https://stackoverflow.com/questions/1014861/is-there-a-css-parent-selector?noredirect=1&lq=1) and [here](https://en.wikipedia.org/wiki/Cascading_Style_Sheets#Limitations).  
 I resorted to JavaScript to solve this problem.  When you focus the search field (`input` element), a function is called via the `onfocus` attribute. This function gets the `form`
-element and changes the CSS `box-shadow` property to it. But now you have to apply
+element and changes its CSS `box-shadow` property. But now you have to apply
 a function when the `input` loses focus to set the shadow back to normal. So you
 call another function via the `onblur` attribute to set the `box-shadow`
 property back to normal. But now you have a problem. The `box-shadow` property
