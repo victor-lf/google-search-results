@@ -3,7 +3,7 @@
 This is a clone of a Google search results page. The structure of the page,
 positioning and basic styling of elements were made by myself. I just checked
 the original source code to fine tune the styling so that the page looks exactly
-like the original.  
+like the original. 
 I separated the page in three sections:
 
 1. The `header`, which contains a form for the search field and navigation links
@@ -11,7 +11,7 @@ I separated the page in three sections:
 3. The `footer`, which contains an unordered list for the links at the bottom
 
 In the `header`, I put the Google image, the `form`, the "apps" icon and the
-"Sign in" button inside a *flex container*, as well as the navigation links
+"Sign in" button inside a **flex container**, as well as the navigation links
 bellow. I found it easier to keep all aligned and position some element to the
 right. For example, the "apps" icon and the "Sign in" button, and the "Settings"
 and "Tools" links. You just set the `margin-left` property to `auto` for the
