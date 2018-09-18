@@ -53,7 +53,7 @@ found that this was caused by a "feature" in some mobile browsers called
 [here](https://bugs.webkit.org/show_bug.cgi?id=84186). According to [this
 answer](https://bugs.webkit.org/show_bug.cgi?id=84186#c17), the only side-effect
 free way to disable Font Boosting is to set CSS
-`max-height: 1000000px` on the block that contains the text, or any fixed height
-greater than the actual height.  
+`max-height: 1000000px` on the block that contains the text (or any fixed height
+greater than the actual height).  
 Setting the `max-height` for all elements
 inside `#results` (`#results * {max-height: 1000000px;}`) solved the problem.
