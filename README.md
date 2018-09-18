@@ -12,17 +12,18 @@ I separated the page in three sections:
 
 In the `header`, I put the Google image, the form, the "apps" icon and the
 "Sign in" button inside a **flex container**, as well as the navigation links
-bellow. I found it easier to keep all aligned and position some element to the
+bellow. I found it easier to keep all aligned and to position some elements to the
 right. For example, the "apps" icon and the "Sign in" button, and the "Settings"
 and "Tools" links. You just set the `margin-left` property to `auto` for the
 element that you want to position to the right.  Of course, there are other ways
 to achieve this result without using Flexbox, like floating the element or using
-the `position` property, but I found easier with Flexbox. Also, this solution
+the `position` property, but I found it easier with Flexbox. Also, this solution
 brings the flexibility and responsiveness possibilities offered by the Flexbox
 layout.
 
 In the `main`, I put the results as list items of an unordered list, as I did
-with the "related searchs".  For that "Goooooooooogle" at the bottom, I found
+with the "related searchs".  
+For that "Goooooooooogle" at the bottom, I found
 easier and practical to just create a `table` with one row. Each letter is an
 image inside a cell of the table, except the "gle >", which is just one image
 inside a cell.
