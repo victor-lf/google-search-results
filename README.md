@@ -10,7 +10,7 @@ I separated the page in three sections:
 2. The `main`, which contains the results
 3. The `footer`, which contains some links
 
-In the `header`, I put the Google image, the form, the "apps" icon and the
+In the `header`, I put the Google image, the search field, the "apps" icon and the
 "Sign in" button inside a **flex container**, as well as the navigation links
 bellow. I found it easier to keep all aligned and to position some elements to the
 right. For example, the "apps" icon and the "Sign in" button, and the "Settings"
