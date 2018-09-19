@@ -1,5 +1,5 @@
-var form = document.getElementsByTagName("form")[0];
 var input = document.getElementsByTagName("input")[0];
+var form = input.parentNode
 
 input.addEventListener("focus", function() {
     form.setAttribute("style", "box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.08);");
