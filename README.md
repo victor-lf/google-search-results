@@ -55,7 +55,7 @@ free way to disable Font Boosting is to set CSS
 `max-height: 1000000px` on the block that contains the text (or any fixed height
 greater than the actual height).  
 Setting the `max-height` for all elements
-inside `#results` (`#results * {max-height: 1000000px;}`) solved the problem.
+inside `main` (`main * {max-height: 1000000px;}`) solved the problem.
 
 ---
 
