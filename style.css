@@ -16,6 +16,9 @@ h3 {font-size: 16px; margin-bottom: 0;}
 ul {margin: 0; padding: 0;}
 
 
+
+
+
 /* Header */
 
 header {
@@ -189,6 +192,9 @@ nav a:active{color: #1A73E8;}
 }
 
 
+
+
+
 /* Main */
 
 main {
@@ -339,6 +345,9 @@ td:last-child {
     text-align: end;
     width: 80px;
 }
+
+
+
 
 
 /* Footer */
