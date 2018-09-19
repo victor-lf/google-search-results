@@ -56,7 +56,7 @@ free way to disable Font Boosting is to set CSS
 greater than the actual height).  
 Setting the `max-height` for all elements
 inside `main` (`main * {max-height: 1000000px;}`) solved the problem.  
-This is also hackish and suboptimal, but I just wanted the fonts rendering the way they should.
+This is also hackish and suboptimal, but I just wanted the fonts rendering the way they should.  
 
 ---
 
