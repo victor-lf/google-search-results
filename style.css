@@ -199,7 +199,7 @@ nav a:active{color: #1A73E8;}
 
 main {
     margin-left: 150px;
-    width: 632px; 
+    width: 632px;
 }
 
 main a:link {color:#1a0dab;}
@@ -207,14 +207,14 @@ main a:link {color:#1a0dab;}
 main a:hover {text-decoration: underline;}
 
 #stats {
-    color: #777; 
+    color: #777;
     padding: 12px 20px;
 }
 
 main > ul {margin-bottom: 50px;}
 
 #results > li {
-    list-style-type: none; 
+    list-style-type: none;
     margin-bottom: 25px;
 }
 
