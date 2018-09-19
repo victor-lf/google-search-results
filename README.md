@@ -48,7 +48,7 @@ Although it works, this is all very hackish and inelegant. Please, if you know a
 Another sidenote. Testing the page in Chrome for Android, I noted that the fonts
 were not correct. The headings and paragraphs inside `#results` were too big. I
 found that this was caused by a "feature" in some mobile browsers called
-**Font Boosting**. It's described
+*Font Boosting*. It's described
 [here](https://bugs.webkit.org/show_bug.cgi?id=84186). According to [this
 answer](https://bugs.webkit.org/show_bug.cgi?id=84186#c17), the only side-effect
 free way to disable Font Boosting is to set CSS
