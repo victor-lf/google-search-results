@@ -46,7 +46,7 @@ applied by the script is inline style and overrides the `box-shadow` property
 applied when the `form` is hovered. Now, the shadow doesn't change if the `form` is hovered. To bypass this, I used an `!important` declaration to prioritize the `box-shadow` property in the `form:hover` selector.  
 Although it works, this is all very hackish and inelegant. Please, if you know a better solution, open a pull request.
 
-Another sidenote. Testing the page in Chrome for Android, I noted tha the fonts
+Another sidenote. Testing the page in Chrome for Android, I noted that the fonts
 were not correct. The headings and paragraphs inside `#results` were too big. I
 found that this was caused by a "feature" in some mobile browsers called
 **Font Boosting**. It's described
