@@ -1,5 +1,5 @@
-var input = document.getElementsByTagName("input")[0];
-var form = input.parentNode;
+let input = document.getElementsByTagName("input")[0];
+let form = input.parentNode;
 
 input.addEventListener("focus", focus);
 input.addEventListener("blur", blur);
