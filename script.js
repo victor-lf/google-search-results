@@ -1,6 +1,6 @@
 /* jshint esversion: 6, strict: true */
 
-let input = document.getElementsByTagName("input")[0];
+let input = document.querySelector("input");
 let form = input.parentNode;
 
 input.addEventListener("focus", focus);
