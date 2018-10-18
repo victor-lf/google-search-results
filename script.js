@@ -1,7 +1,7 @@
 /* jshint esversion: 6, strict: true */
 
-let input = document.querySelector('input');
-let form = input.parentNode;
+const input = document.querySelector('input');
+const form = input.parentNode;
 
 input.addEventListener('focus', focus);
 input.addEventListener('blur', blur);
