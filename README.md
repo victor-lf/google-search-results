@@ -1,62 +1,53 @@
 # google-search-results
 
-This is a clone of a Google search results page. The structure of the page,
-positioning and basic styling of elements were made by myself. I just checked
-the original source code to fine tune the styling so that the page looks exactly
-like the original.  
-I separated the page in three sections:
+This is a clone of the Google search results page. I would check the original source code to fine tune the styling so that the page looks indistinguishable from the original.  
+
+The page was separated into three sections:
 
 1. The `header`, which contains the search field and navigation links
 2. The `main`, which contains the results
 3. The `footer`, which contains some links
 
-In the `header`, I put the Google image, the search field, the "apps" icon and the
-"Sign in" button inside a **flex container**, as well as the navigation links
-bellow. I found it easier to keep all aligned and to position some elements to the
-right. For example, the "apps" icon and the "Sign in" button, and the "Settings"
+The `header` contains the Google image, the search field, the "apps" icon and the
+"Sign in" button inside a **Flexbox container**. With **Flexbox container**, I found it easier to keep everything aligned and to position some elements to the 
+right. For instance, the "apps" icon and the "Sign in" button, and the "Settings"
 and "Tools" links. You just set the `margin-left` property to `auto` for the
-element that you want to position to the right.  Of course, there are other ways
-to achieve this result without using Flexbox, like floating the element or using
-the `position` property, but I found it easier with Flexbox. Also, this solution
-brings the flexibility and responsiveness possibilities offered by the Flexbox
-layout.
+element that you want to position to the right. But notice that there are other ways
+to achieve the same result, like floating the element or using
+the `position` property. However, Flexbox brings flexibility and responsiveness to the table.
 
-In the `main`, I put the results as list items of an unordered list, as I did
-with the "related searchs".  
+In the `main` section, the results are items of an unordered list. The same with "related searchs".  
 For that "Goooooooooogle" at the bottom, I found it
-easier and practical to just use a `table` with one row. Each letter is an
-image inside a cell of the table, except the "gle >", which is just one image
-inside a cell.
+easier to just use a `table` with one row. Each letter is an
+image inside a cell of the table, except the "gle >", which is just a image
+in a cell.
 
-The `footer` contains just a `div` with the country and an unordered list with
-some links.
+The `footer` contains only a `div` with the name of the country and an unordered list with
+a few links.
 
-As a sidenote, I had a little problem with the shadow effect of the `form`
+As a sidenote, I had issues with the shadow effect of the `form`
 element. The `form` contains two children: an `input` for the search field and a
-`button` to submit. When the `input` (the search field) is focused, I wanted the
-shadow to change for the whole `form` element. So, here is the problem: when you
+`button` to submit. When the `input` (the search field) was focused, I wanted the
+shadow to change for the whole `form` element. But here is the problem: when you
 focus an element, how do you select its parent to apply a property to it
-(`box-shadow`, in this case)? Well, with pure CSS, apparently the only way is
-using the `:has()` pseudo-class. But, as of 2018, this is experimental and [not
+(`box-shadow`, in this case)? Well, with pure CSS, the only way, apparently, is
+by using the `:has()` pseudo-class. But, as of 2018, this is experimental and [not
 supported by any browser](https://caniuse.com/#feat=css-has). This limitation is
 well know, as can be seen [here](https://stackoverflow.com/questions/2212583/affecting-parent-element-of-focusd-element-pure-csshtml-preferred#2212935), [here](https://stackoverflow.com/questions/1014861/is-there-a-css-parent-selector?noredirect=1&lq=1) and [here](https://en.wikipedia.org/wiki/Cascading_Style_Sheets#Limitations).  
-I resorted to JavaScript to solve this problem. When you focus the search field (`input` element), a function is called via the `addEventListener()` method. This function sets the `box-shadow` property of the `form` element via the `setAttribute()` method. When the search field loses focus, another function is called to set the `box-shadow` property of the `form` back to normal. But now you have a problem. The `box-shadow` property
-applied by the script is inline style and overrides the `box-shadow` property
+Then, I resorted to JavaScript to solve this problem. When you focus the search field (`input` element), a function is called via the `addEventListener()` method. This function sets the `box-shadow` property of the `form` element via the `setAttribute()` method. When the search field loses focus, another function is called to set the `box-shadow` property of the `form` back to normal. But now you have a new problem. The `box-shadow` property
+applied by the script is *inline* style and overrides the `box-shadow` property
 applied when the `form` is hovered. Now, the shadow doesn't change if the `form` is hovered. To bypass this, I used an `!important` declaration to prioritize the `box-shadow` property in the `form:hover` selector.  
-Although it works, this is all very hackish and inelegant. Please, if you know a better solution, open a pull request.
+Very hackish and inelegant, I know. But hey, it works! (Please, feel free to open a pull request in case you have a better solution.)
 
-Another sidenote. Testing the page in Chrome for Android, I noted that the fonts
-were not correct. The headings and paragraphs inside `#results` were too big. I
-found that this was caused by a "feature" in some mobile browsers called
+Another sidenote. When testing the page in Chrome for Android, the headings and paragraphs inside `#results` were too big. I
+found out that this was caused by a "feature" in some mobile browsers called
 *Font Boosting*. It's described
 [here](https://bugs.webkit.org/show_bug.cgi?id=84186). According to [this
-answer](https://bugs.webkit.org/show_bug.cgi?id=84186#c17), the only side-effect
-free way to disable Font Boosting is to set CSS  
-`max-height: 1000000px` on the block that contains the text (or any fixed height
-greater than the actual height).  
+answer](https://bugs.webkit.org/show_bug.cgi?id=84186#c17), the only side-effect-free way to disable *Font Boosting* is setting the CSS  
+property `max-height` to any fixed height greater than the actual height for the block that contains the text (I just set to `1000000px`).  
 Setting the `max-height` for all elements
 inside `main` (`main * {max-height: 1000000px;}`) solved the problem.  
-This is also hackish and suboptimal, but I just wanted the fonts rendering the way they should.
+This is also hackish and all, but I just wanted the fonts rendering the way they should.
 
 ---
 
