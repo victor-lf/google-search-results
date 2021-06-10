@@ -1,8 +1,8 @@
 # google-search-results
 
-This is a clone of the Google search results page. I would check the original source code to fine tune the styling so that the page looks indistinguishable from the original.  
+This is a clone of the Google search results page. The goal was to do something indistinguishable from the originial. For that, I would check the original source code to fine tune the styling accordingly.  
 
-The page was separated into three sections:
+The page was divided into three sections:
 
 1. The `header`, which contains the search field and navigation links
 2. The `main`, which contains the results
