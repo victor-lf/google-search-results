@@ -1,6 +1,6 @@
 # google-search-results
 
-This is a clone of the Google search results page. The goal was to have something indistinguishable from the originial even for the keenest of eyes. For that, I would check the original source code to fine tune the styling accordingly.  
+This is a clone of the Google search results page. The goal was to have something indistinguishable from the originial even for the keenest of eyes. To accomplish that, I would inspect the original source code to fine-tune the styling accordingly. (Is that a crime?)  
 
 The page was divided into three sections:
 
